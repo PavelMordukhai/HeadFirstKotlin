@@ -26,4 +26,15 @@ fun main(args: Array<String>) {
         println(" x is now $x.")
     }
     println()
+
+    //
+
+    if (x == 20) {
+        println(" x must be 20.")
+    } else {
+        println(" x isn't 20.")
+    }
+    if (name == "Cormoran") {
+        println("$name Strike")
+    }
 }
