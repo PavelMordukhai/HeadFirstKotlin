@@ -1,5 +1,7 @@
 package org.example.chapter_02
 
+import kotlin.random.Random
+
 fun main(){
 
     val wordArray1 = arrayOf("24/7", "multi-tier", "B-to-B", "dynamic", "pervasive")
@@ -17,7 +19,7 @@ fun main(){
     println()
 
     // случайное число (from <= x < until) Int
-    val rand0 = kotlin.random.Random.nextInt(0, arraySize1)
+    val rand0 = Random.nextInt(0, arraySize1)
     println(rand0)
     println()
 
@@ -25,9 +27,9 @@ fun main(){
     val rand2 = (Math.random() * arraySize2).toInt()
     val rand3 = (Math.random() * arraySize3).toInt()
 
-    val rand11 = kotlin.random.Random.nextInt(0, arraySize1)
-    val rand22 = kotlin.random.Random.nextInt(0, arraySize2)
-    val rand33 = kotlin.random.Random.nextInt(0, arraySize3)
+    val rand11 = Random.nextInt(0, arraySize1)
+    val rand22 = Random.nextInt(0, arraySize2)
+    val rand33 = Random.nextInt(0, arraySize3)
 
     val phrase1 = "${wordArray1[rand1]} ${wordArray2[rand2]} ${wordArray3[rand3]}"
     val phrase2 = "${wordArray1[rand11]} ${wordArray2[rand22]} ${wordArray3[rand33]}"
