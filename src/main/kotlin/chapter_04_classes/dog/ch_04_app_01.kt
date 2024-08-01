@@ -34,4 +34,23 @@ fun main() {
     dogs[1].printBark()
     dogs[1].weight = 25
     dogs[1].printBark()
+    println()
+
+    //
+
+    println(myDog.breed)
+    println()
+
+    println(myDog.activities[0])
+
+    var activitie = myDog.activities[0]
+    activitie = "sleep"
+    println(activitie)
+    println(myDog.activities[0])
+
+    myDog.activities[0] = "eat"
+    println(myDog.activities[0])
+    println()
+
+    //
 }
