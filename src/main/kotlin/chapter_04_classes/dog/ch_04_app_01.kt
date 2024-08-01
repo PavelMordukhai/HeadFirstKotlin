@@ -1,4 +1,4 @@
-package org.example.chapter_04_classes.Dog
+package org.example.chapter_04_classes.dog
 
 fun main() {
     val myDog = Dog("Fido", 70, "Mixed")
