@@ -1,6 +1,6 @@
 package org.example.chapter_04_classes.dog
 
-class Dog (val name: String, var weight: Int, breedParam: String) {
+class Dog (val name: String, weightParam: Int, breedParam: String) {
 
     // init - блок инициализации - выполняется при инициализации объекта Dog
     init {
@@ -11,12 +11,27 @@ class Dog (val name: String, var weight: Int, breedParam: String) {
 
     var activities = arrayOf("Walks")
     val breed = breedParam.uppercase()
-    lateinit var temperament: String
 
     init {
         println("The breed is $breed.")
         println()
     }
+
+    // Проверка на положительное значение.
+    // Благодаря наличию set-метода свойство weight будет обновляться только значениями,
+    // которые больше нуля.
+    // setter
+    var weight = weightParam
+        set(value) {
+            if (value > 0) field = value
+        }
+
+    // пересчёт фунтов в килограммы
+    // getter
+    val weightInKgs: Double
+        get() = weight / 2.2
+
+    lateinit var temperament: String
 
     fun printBark() {
         println(if (weight < 20) "Yip!" else "Woof!")

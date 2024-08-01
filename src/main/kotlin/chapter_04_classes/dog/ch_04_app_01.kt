@@ -35,6 +35,8 @@ fun main() {
     dogs[1].weight = 25
     dogs[1].printBark()
     println()
+    println("Weight for ${dogs[1].name} is ${dogs[1].weight}")
+    println()
 
     //
 
@@ -51,6 +53,17 @@ fun main() {
     myDog.activities[0] = "eat"
     println(myDog.activities[0])
     println()
+    myDog.activities = arrayOf("Walks", "Fetching balls", "Frisbee")
+
+    for (item in myDog.activities) {
+        println("My dog enjoys $item")
+    }
+    println()
 
     //
+
+    println(myDog.weightInKgs)
+    println("Weight in Kgs is ${myDog.weightInKgs}")
+    myDog.weight = -2
+    println("Weight is ${myDog.weight}")
 }
