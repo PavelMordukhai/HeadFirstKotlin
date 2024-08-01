@@ -1,4 +1,4 @@
-package org.example.chapter_04_classes
+package org.example.chapter_04_classes.Dog
 
 fun main() {
     val myDog = Dog("Fido", 70, "Mixed")
@@ -25,8 +25,13 @@ fun main() {
 
     //
 
-    var dogs = arrayOf(
+    val dogs = arrayOf(
         Dog("Rex", 60, "Mixed"),
         Dog("Ripper", 10, "Poodle")
     )
+
+    dogs[1].weight = 15
+    dogs[1].printBark()
+    dogs[1].weight = 25
+    dogs[1].printBark()
 }

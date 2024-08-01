@@ -1,4 +1,4 @@
-package org.example.chapter_04_classes
+package org.example.chapter_04_classes.Dog
 
 class Dog (val name: String, var weight: Int, val breed: String) {
 
