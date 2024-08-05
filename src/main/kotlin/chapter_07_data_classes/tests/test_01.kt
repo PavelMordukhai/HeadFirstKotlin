@@ -1,4 +1,4 @@
-package org.example.chapter_07_gata_classes.tests
+package org.example.chapter_07_data_classes.tests
 
 class Recipe1(
     val title: String,
