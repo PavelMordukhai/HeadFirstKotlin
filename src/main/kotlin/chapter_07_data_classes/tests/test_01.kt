@@ -7,10 +7,22 @@ class Recipe1(
 ) {
 }
 
+
 // переопределяет функции hashCode(), toString(), equals() ( == )
 data class RecipeData(
     val title: String,
     val isVegetarian: Boolean,
+) {
+    var mainIngredient = ""
+}
+
+
+// значения по умолчанию в конструкторе
+data class RecipeData2(
+    val title: String,
+    val mainIngredient: String,
+    val isVegetarian: Boolean = false,
+    val difficulty: String = "Easy",
 ) {
 }
 
