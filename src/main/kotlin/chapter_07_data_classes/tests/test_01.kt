@@ -1,5 +1,6 @@
 package org.example.chapter_07_data_classes.tests
 
+
 class Recipe1(
     val title: String,
     val isVegetarian: Boolean,
