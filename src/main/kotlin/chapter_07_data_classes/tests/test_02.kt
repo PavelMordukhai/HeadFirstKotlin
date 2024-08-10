@@ -29,4 +29,12 @@ fun main() {
     val (title, vegetarian) = r
     println(title)
     println(vegetarian)
+    println()
+
+    val arr1 = arrayOf(10, 15, 30)
+    val (n1, n2, n3) = arr1
+    println(arr1.joinToString())
+    println(n1)
+    println(n2)
+    println(n3)
 }
