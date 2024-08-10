@@ -26,6 +26,7 @@ fun main() {
 //    val title = r.component1()
 //    val vegetarian = r.component2()
 
+
     val (title, vegetarian) = r
     println(title)
     println(vegetarian)
