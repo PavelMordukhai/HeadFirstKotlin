@@ -1,6 +1,10 @@
 package org.example.chapter_04_classes.dog
 
-class Dog (val name: String, weightParam: Int, breedParam: String) {
+class Dog(
+    val name: String,
+    weightParam: Int,
+    breedParam: String
+) {
 
     // init - блок инициализации - выполняется при инициализации объекта Dog
     init {

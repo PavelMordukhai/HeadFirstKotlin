@@ -1,6 +1,9 @@
 package org.example.chapter_04_classes.rectangle
 
-class Rectangle(var wight: Int, var height: Int) {
+class Rectangle(
+    var wight: Int,
+    var height: Int
+) {
 
     // является ли прямоугольник квадратом
     val isSquare: Boolean
@@ -21,7 +24,7 @@ fun main() {
         Rectangle(1, 1)
     )
 
-    for (x in 0..< r.size) {
+    for (x in r.indices) {
         // назначение ширины и высоты прямоугольника
         r[x].wight = (x + 1) * 3
         r[x].height = x + 5
